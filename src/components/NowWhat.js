@@ -7,6 +7,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { withStyles } from "@material-ui/core/styles";
 import AvatarRaw from "@material-ui/core/Avatar";
+import Location from "./Location";
 
 const cardStyles = theme => ({
   root: {
@@ -42,23 +43,10 @@ const NowWhat = props => {
       <CardContent>
         <List>
           <ListItem>
-            <Avatar>1</Avatar>
-            <ListItemText primary="Connect to the Drone API" />
-          </ListItem>
-          <ListItem>
-            <Avatar>2</Avatar>
-            <ListItemText primary="Create your Visualization" />
-          </ListItem>
-          <ListItem>
-            <Avatar>3</Avatar>
-            <ListItemText primary="Poll the API" />
-          </ListItem>
-          <ListItem>
-            <Avatar>4</Avatar>
-            <ListItemText primary="Submit Your App" />
+            <Location/>
           </ListItem>
         </List>
-      </CardContent>
+      </CardContent>      
     </Card>
   );
 };

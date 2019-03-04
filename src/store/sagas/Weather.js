@@ -29,6 +29,8 @@ function* watchWeatherIdReceived(action) {
 }
 
 function* watchFetchWeather(action) {
+  console.log("Watch weather")
+  console.log(action)
   const { latitude, longitude } = action;
   const { error, data } = yield call(
     API.findLocationByLatLng,
